@@ -1,0 +1,103 @@
+{
+    "header": {
+        "languages": {
+            "en": "Inglés",
+            "es": "Español",
+            "ca": "Catalán",
+            "disabledReason": "El nivel gratuito de mi CMS me limita a dos traducciones :("
+        },
+        "themeTooltip": {
+            "dark": "Tema Oscuro",
+            "light": "Tema Luminoso",
+            "systemDefault": "Defecto de Sistema"
+        },
+        "linkedInTooltip": "Perfil de LinkedIn",
+        "gitHubTooltip": "Perfil de GitHub"
+    },
+    "home": {
+        "title": "Inicio"
+    },
+    "statistics": {
+        "chart": {
+            "pie":{
+                "mainHeader": "Porcentage de creditos ECTS por nota categorica",
+                "gradeHeader": "Rama del conocimiento de los creditos ECTS graduados con: ",
+                "comeBackTooltip": "Deshabilitar filtro de nota categorica",
+                "mode": "Moda"
+            },
+            "line":{
+                "header" : "Nota media por semestre",
+                "best" : "Mejores",
+                "worst" : "Peores"
+            },
+            "histogram":{
+                "header": "Histograma de creditos ECTS por nota numérica",
+                "binSizeSelector":{
+                    "ariaLabel": "Selecciona el rango de agrupación"
+                }
+            },
+            "filtering": {
+                "branchesOfKnowledge":{
+                    "label" : "Ramas de Conocimiento",
+                    "hideABranch": "Oculta una rama",
+                    "addABranch": "Añadir rama"
+                },
+                "years" : {
+                    "year": "Año",
+                    "label": "Rango de Años",
+                    "sliderAriaLabel" : "Rango de años a mostrar" 
+                },
+                "warns": {
+                    "noGradeBetweenYears": "No hay asignaturas con {g} entre los años {from} y {to}. Filtro de nota deshabilitado",
+                    "branchOfKnowledgeRestarted": "No hay información que cumpla los filtros actuales. El filtro de ramas de conocimiento se ha reiniciado",
+                    "doNotHideAllBranches": "No puedes ocultar todas las ramas de conocimiento.",
+                    "noFilteringInfo": "No hay información para el filtrado actual"
+                }
+            }
+        },
+        "certificate": "Certificado"
+    },
+    "cards" : {
+        "modal" : {
+            "header":{
+                "previousImage" : "Imagen anterior ({index} de {total})",
+                "nextImage" : "Siguiente imagen ({index} de {total})"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contáctame",
+        "formFields": {
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Tu nombre"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "tu@gmail.com"
+            },
+            "subject": {
+                "label": "Asunto",
+                "placeholder": "Petición de..."
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Hola Eric!... "
+            }
+        },
+        "send": "Enviar"
+    },
+    "404": {
+        "toHome": "Volver a inicio",
+        "notifyAnError": "Notificarme un error"
+    },
+    "generals" : {
+        "close": "Cerrar",
+        "year" : "Año",
+        "month" : "Mes",
+        "years" : "Años",
+        "months" : "Meses",
+        "dateConnector" : "a",
+        "and" : "y"
+    }
+}

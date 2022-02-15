@@ -1,0 +1,103 @@
+{
+    "header": {
+        "languages": {
+            "en": "English",
+            "es": "Spanish",
+            "ca": "Catalan",
+            "disabledReason": "My CMS' free tier limits me to two translations :("
+        },
+        "themeTooltip": {
+            "dark": "Dark theme",
+            "light": "Light theme",
+            "systemDefault": "System default"
+        },
+        "linkedInTooltip": "LinkedIn Profile",
+        "gitHubTooltip": "GitHub Profile"
+    },
+    "home": {
+        "title": "Home"
+    },
+    "statistics": {
+        "chart": {
+            "pie": {
+                "mainHeader": "Percentage of ECTS credits by categorical grade",
+                "gradeHeader": "Branch of knowledge for ECTS credits graded with: ",
+                "comeBackTooltip": "Disable categorical grade filter",
+                "mode": "Mode"
+            },
+            "line": {
+                "header": "Average grade by semester",
+                "best": "Best",
+                "worst": "Worst"
+            },
+            "histogram": {
+                "header": "Histogram of ECTS credits by numerical grade",
+                "binSizeSelector": {
+                    "ariaLabel": "Select bin size"
+                }
+            },
+            "filtering": {
+                "branchesOfKnowledge": {
+                    "label": "Branches of Knowledge",
+                    "hideABranch": "Hide a branch",
+                    "addABranch": "Add a branch"
+                },
+                "years": {
+                    "year": "Year",
+                    "label": "Years Range",
+                    "sliderAriaLabel": "Range of years to show"
+                },
+                "warns": {
+                    "noGradeBetweenYears": "No subjects graded with {grade} between the years {from} and {to}. Grade filter disabled",
+                    "branchOfKnowledgeRestarted": "No information meets current filtering. Branch of knowledge filters have been restarted",
+                    "doNotHideAllBranches": "You cannot hide all branches of knowledge",
+                    "noFilteringInfo": "There is no information for the current filtering"
+                }
+            }
+        },
+        "certificate": "Certificate"
+    },
+    "cards" : {
+        "modal" : {
+            "header":{
+                "previousImage" : "Previous Image ({index} of {total})",
+                "nextImage" : "Next image ({index} of {total})"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact Me",
+        "formFields": {
+            "name": {
+                "label": "Name",
+                "placeholder": "Your Name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "You@gmail.com"
+            },
+            "subject": {
+                "label": "Subject",
+                "placeholder": "Request for..."
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Hi, Eric!... "
+            }
+        },
+        "send": "Send"
+    },
+    "404": {
+        "toHome": "Come back home",
+        "notifyAnError": "Notify me a bug"
+    },
+    "generals" : {
+        "close": "Close",
+        "year" : "Year",
+        "month" : "Month",
+        "years" : "Years",
+        "months" : "Months",
+        "dateConnector" : "to",
+        "and" : "and"
+    }
+}

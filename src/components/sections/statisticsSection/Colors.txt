@@ -1,0 +1,37 @@
+AI: Purple #977be4
+Maths : Blue #7bb5e4
+Software : Green #7BE495
+
+Marks:
+Orange and Yellows
+
+Academic Years:
+Pinks and Light Reds
+
+AI: 
+Light tones:
+Machine Learning (#b6a2ec) (Same as AI)
+Robotics (#d7a2ec) (Purple -> Pink (A bit))
+Knowledge Engineering (#a2adec) (Blue <- Purple (A bit))
+Data Science/Statistics (#a2c6ec) (Blue <- Purple (Center +) LIMIT TO MATHS
+Computer Vision (#e3a2ec) (Purple -> Pink (More))
+Thesis (#a2b5ec) (Blue <- Purple (Center -))
+Internship (#eca2ea) (Purple -> Pink (More +)) LIMIT
+
+Maths:
+Light tones:
+
+Software Engineering:
+Light tones:
+Algorithmics (#a2eca9) (Same as Software Engineering)
+Information Technologies (#a2ece7) (Green -> Blue (Center)) LIMIT TO MATHS
+Hardware (#deeca2) (Yellow <- Green (Center+)) LIMIT
+Low-Level Programming (#ceeca2) (Yellow <- Green (Center -)  
+High-Performance Computing (#c0eca2) (Yellow <- Green (A bit))
+Databases (#a2eccb) (Green -> Blue (A bit))
+Multimedia (#a2ecd7) (Green -> Blue (Center -))
+
+Others:
+Very Light Tone:
+Other (#EEF5D0) (Yellow <- Green (Center +)) LIMIT
+ 
