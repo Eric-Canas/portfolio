@@ -21,7 +21,12 @@ class MainWrapperClass extends Component {
     constructor(props) {
         super(props);
         // If it is saved in the local storage, use it
-        let wasDark = localStorage.getItem("isDark");
+        let wasDark = "true";
+        try {
+            wasDark = localStorage.getItem("isDark");
+        } catch (e) {
+            wasDark = "true";
+        }
         // To boolean if it was not null
         if (wasDark) wasDark = wasDark === "true";
 
