@@ -11,10 +11,10 @@ module.exports = {
             " More than 3 years of experience in Computer Vision."+
             " Main Languages: Python & JavaScript.",
         author: "Eric Canas",
-        image: "/images/social-image.png",
+        image: "src/images/social-image.png",
         keywords:
             "Artificial Intelligence, Computer Vision, Portfolio, Tensorflow, PyTorch, Keras",
-        siteUrl: "https://www.ericcanas.com",
+        siteUrl: "https://ericcanas.com",
         twitterUsername: "@HaruKaeruru",
     },
     plugins: [
