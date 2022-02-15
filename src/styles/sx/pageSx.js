@@ -20,7 +20,7 @@ export const INDEX_SX = {
     FOOTER: {
         pr: 0,
         mb: 0,
-        position: { xs: "sticky", sm: "relative" },
+        position: { xs: "relative", sm: "relative" },
         bottom: { xs: 0, sm: "unset" },
         left: { xs: 0, sm: "unset" },
         pb : 2,
