@@ -1,5 +1,5 @@
 export const LAYOUT_SX = {
-    CONTENT_WRAPPER : { mb: 6, mt :0},
+    CONTENT_WRAPPER : { mb: 0, mt :0},
 }
 
 export const LAYOUT_HEADER_SX ={
