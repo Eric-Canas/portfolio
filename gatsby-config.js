@@ -21,6 +21,7 @@ module.exports = {
         "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
+        "gatsby-plugin-sitemap",
         "gatsby-plugin-robots-txt",
         "gatsby-plugin-react-helmet",
         {
@@ -63,19 +64,5 @@ module.exports = {
                 },
             },
         },
-        {
-            resolve: `gatsby-plugin-sitemap`,
-            options: {
-              output: `/sitemap.xml`,
-            },
-        },
-        {
-            resolve: 'gatsby-plugin-robots-txt',
-            options: {
-              host: 'https://www.ericcanas.com',
-              sitemap: 'https://www.ericcanas.com/sitemap.xml',
-              policy: [{userAgent: '*', allow: '/'}]
-            }
-          }
     ],
 };
