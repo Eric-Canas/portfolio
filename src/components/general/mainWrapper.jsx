@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material";
 import THEMES, { DARK, LIGHT } from "../../styles/themes";
 
 
-
+const DEFAULT_DARK = true;
 export const ThemeContext = React.createContext();
 
 export default function MainWrapper({ ...rest }) {
@@ -21,18 +21,16 @@ class MainWrapperClass extends Component {
     constructor(props) {
         super(props);
         // If it is saved in the local storage, use it
-        let wasDark = "true";
+        let wasDark = `${DEFAULT_DARK}`;
         try {
             wasDark = localStorage.getItem("isDark");
-        } catch (e) {
-            wasDark = "true";
-        }
+        } catch {}
         // To boolean if it was not null
         if (wasDark) wasDark = wasDark === "true";
 
         this.isThemeFixed = wasDark !== null;
         // Otherwise, look for the user preference
-        this.state = { isDark: wasDark ?? (this.props.prefersDark || false) };
+        this.state = { isDark: wasDark ?? (this.props.prefersDark || DEFAULT_DARK) };
 
         this.setIsDark = this.setIsDark.bind(this);
     }
@@ -54,6 +52,11 @@ class MainWrapperClass extends Component {
 
     render() {
         const { isDark } = this.state;
+        try{
+            if(localStorage.getItem("isDark") === "true" && this.state.isDark === false){
+                this.setIsDark(true);
+            }
+        }catch{}
 
         return (
             <ThemeContext.Provider
