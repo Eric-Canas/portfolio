@@ -5,16 +5,16 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
+        siteUrl: "https://www.ericcanas.com",
         title: "AI Specialist and Computer Vision Engineer | Eric Canas",
         description:
             "Computer Engineer with a Master's Degree in Artificial Intelligence." +
             " More than 3 years of experience in Computer Vision."+
             " Main Languages: Python & JavaScript.",
         author: "Eric Canas",
-        image: "src/images/social-image.png",
+        image: "/images/social-image.png",
         keywords:
             "Artificial Intelligence, Computer Vision, Portfolio, Tensorflow, PyTorch, Keras",
-        siteUrl: "https://ericcanas.com",
         twitterUsername: "@HaruKaeruru",
     },
     plugins: [
@@ -22,12 +22,12 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         "gatsby-plugin-sitemap",
+        "gatsby-plugin-robots-txt",
         "gatsby-plugin-react-helmet",
         {
             resolve: `gatsby-source-contentful`,
             options: {
                 spaceId: process.env.CONTENTFUL_SPACE_ID,
-                // Learn about environment variables: https://gatsby.dev/env-vars
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
                 downloadLocal: true,
             },
@@ -50,7 +50,7 @@ module.exports = {
             options: {
                 name: `Eric Canas Portfolio`,
                 short_name: `Eric Canas`,
-                description: `Just the Eric Canas resume but fancier`,
+                description: `AI Specialist and Computer Vision Engineer | Eric Canas`,
                 start_url: `/`,
                 display: `standalone`,
                 icon: `src/images/icon.png`,

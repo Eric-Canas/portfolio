@@ -53,7 +53,7 @@ class MainWrapperClass extends Component {
     render() {
         const { isDark } = this.state;
         try{
-            if(localStorage.getItem("isDark") === "true" && this.state.isDark === false){
+            if(localStorage.getItem("isDark") === "true" && !isDark){
                 this.setIsDark(true);
             }
         }catch{}
