@@ -70,7 +70,7 @@ module.exports = {
             },
           },
           {
-              resolve: `gatsby-robots-txt`,
+              resolve: `gatsby-plugin-robots-txt`,
                 options: {
                     host: "https://www.ericcanas.com",
                     sitemap: "https://www.ericcanas.com/sitemap-index.xml",
