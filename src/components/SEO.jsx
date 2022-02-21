@@ -40,7 +40,7 @@ const Seo = ({ title, description, image, article, locale }) => {
   locale = locale || "en"
 
   return (
-    <Helmet title={"Eric Cañas"} htmlAttributes={{lang: locale}}>
+    <Helmet title={seo.title} htmlAttributes={{lang: locale}}>
       <title>{seo.title}</title>
       <meta charSet="utf-8" />
       <meta name="title" content={seo.title} />
