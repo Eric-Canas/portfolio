@@ -98,6 +98,7 @@
         "years" : "Years",
         "months" : "Months",
         "dateConnector" : "to",
-        "and" : "and"
+        "and" : "and",
+        "from" : "from"
     }
 }

@@ -33,7 +33,6 @@ class ListEntry extends Component {
                   underline: "hover",
               }
             : {};
-
         return (
             <ListItem>
                 <ListItemAvatar sx={LIST_SX.IMAGE_CONTAINER}>
@@ -51,6 +50,7 @@ class ListEntry extends Component {
                             <DateSubheader
                                 dateStart={dateStart}
                                 dateFinish={showTime && dateFinish}
+                                showTime={showTime}
                             />
                             <br />
                             {documentToReactComponents(

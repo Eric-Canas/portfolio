@@ -17,11 +17,12 @@ class DateSubheader extends Component {
   getString() {
     const {intl} = this.props;
     const {locale} = intl;
+    const {dateStart, showTime} = this.props;
+    let dateFinish = this.props.dateFinish;
     const result = { date : null, duration : null}
-    
-    if (this.props.dateStart && this.props.dateFinish) {
-      const start = new Date(this.props.dateStart);
-      const finish = new Date(this.props.dateFinish);
+    if (dateStart && (dateFinish || showTime)) {
+      const start = new Date(dateStart);
+      const finish = new Date(dateFinish !== null? dateFinish : Date.now());
       const difference = finish.getTime() - start.getTime();
       //Get the difference in years and months as a string
       const years = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
@@ -29,8 +30,13 @@ class DateSubheader extends Component {
         (difference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30)
       );
       const dateConnector = intl.formatMessage({ id : `${INTL_PREFIX}.dateConnector`});
-      const date = `${capitalize(start.toLocaleDateString(locale, DATE_FORMAT))}
-       ${dateConnector} ${capitalize(finish.toLocaleDateString(locale, DATE_FORMAT))}`;
+      let date = "";
+      if (dateFinish !== null){
+        date = `${capitalize(start.toLocaleDateString(locale, DATE_FORMAT))}
+        ${dateConnector} ${capitalize(finish.toLocaleDateString(locale, DATE_FORMAT))}`;
+      } else {
+        date = `${capitalize(intl.formatMessage({ id : `${INTL_PREFIX}.from`}))} ${capitalize(start.toLocaleDateString(locale, DATE_FORMAT))}`;
+      }
       result.date = date;
        const monthsString = intl.formatMessage({ id : `${INTL_PREFIX}.${months > 1? "months" : "month"}`});
        const yearsString = intl.formatMessage({ id : `${INTL_PREFIX}.${years > 1? "years" : "year"}`});
@@ -44,8 +50,8 @@ class DateSubheader extends Component {
           result.duration = `${years} ${yearsString} ${and} ${months} ${monthsString}`;
         }
       }
-    } else if (this.props.dateStart || this.props.dateFinish) {
-      const date = new Date(this.props.dateStart || this.props.dateFinish);
+    } else if (dateStart || dateFinish) {
+      const date = new Date(dateStart || this.props.dateFinish);
       result.date = capitalize(date.toLocaleDateString(locale, DATE_FORMAT));
     }
     return result;
