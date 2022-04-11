@@ -13,6 +13,7 @@ const INTL_PREFIX = "generals";
 class CategoryDivider extends Component {
     getAccumulatedTime() {
         const { intl, entries } = this.props;
+        if (!entries) return null;
         let accumulatedTime = 0;
         for (const entry of entries) {
             let { dateStart, dateFinish, showTime } = entry;
@@ -52,7 +53,6 @@ class CategoryDivider extends Component {
     render() {
         let { category } = this.props;
         const time = this.getAccumulatedTime();
-
         return (
             <>
                 <Typography
