@@ -33,7 +33,7 @@ class ListSection extends Component {
                                 {...LIST_GRID_ITEM_PROPS.CATEGORY_TITLE}
                                 key={category ?? "default"}>
                                 {category && (
-                                    <CategoryDivider category={category} />
+                                    <CategoryDivider category={category} entries={entries}/>
                                 )}
                                 {entries.map((entry, index) => (
                                     <React.Fragment key={entry.id}>

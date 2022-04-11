@@ -32,6 +32,13 @@ export const LIST_CATEGORY_PROPS = {
         textAlign: "left",
         color: "text.primary",
     },
+    TIME: {
+        variant: "subtitle2",
+        component: "h3",
+        textAlign: "left",
+        color: "text.secondary",
+        gutterBottom: true,
+    },
 };
 
 export const LIST_ENTRY_PROPS = {
