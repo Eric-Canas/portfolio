@@ -20,6 +20,7 @@ import HttpIcon from '@mui/icons-material/Http';
 import PreviewIcon from '@mui/icons-material/Preview';
 import WorkIcon from '@mui/icons-material/Work';
 import BuildIcon from '@mui/icons-material/Build';
+import AttractionsIcon from '@mui/icons-material/Attractions';
 
 export const HOME = 'Home';
 export const EMAIL = 'Email';
@@ -40,6 +41,7 @@ const NEWSPAPER = 'Newspaper';
 const CODE = 'Code';
 const HTTP = 'Http';
 const PREVIEW = 'Preview';
+const ATTRACTIONS = 'Attractions';
 
 const ICONS = {
     [LIGHT_MODE] : <BrightnessHighIcon />,
@@ -57,9 +59,11 @@ const ICONS = {
     [CODE]: <CodeIcon/>,
     [HTTP]: <HttpIcon/>,
     [PREVIEW]: <PreviewIcon/>,
+    [ATTRACTIONS]: <AttractionsIcon/>,
     [GITHUB]: <GitHubIcon/>,
     [LINKEDIN]: <LinkedInIcon/>,
     [PDF]: <PictureAsPdfIcon/>
+
 }
 export default ICONS;
 
