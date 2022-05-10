@@ -11,12 +11,12 @@ import {
     HEADER_LINKEDIN_LINK,
 } from "../../constants/defaults";
 import { injectIntl } from "gatsby-plugin-intl";
+import { SOCIAL_PROFILES } from "../../styles/sx/layoutSx";
 
 const INTL_PREFIX = "header";
-const ARIA_PREFIX = "ariaLabels"
+const ARIA_PREFIX = "ariaLabels";
 
 class ExternalLinks extends Component {
-
     render() {
         const { intl } = this.props;
         return (
@@ -26,26 +26,36 @@ class ExternalLinks extends Component {
                     flexItem
                     sx={{ ml: 1, mr: 1 }}
                 />
-                <Tooltip title={intl.formatMessage({
-                            id: `${INTL_PREFIX}.linkedInTooltip`})} arrow>
+                <Tooltip
+                    title={intl.formatMessage({
+                        id: `${INTL_PREFIX}.linkedInTooltip`,
+                    })}
+                    arrow>
                     <IconButton
                         component={Link}
                         href={HEADER_LINKEDIN_LINK}
                         target='_blank'
                         aria-label={intl.formatMessage({
-                            id: `${ARIA_PREFIX}.visitLinkedIn`})}>
+                            id: `${ARIA_PREFIX}.visitLinkedIn`,
+                        })}
+                        sx={SOCIAL_PROFILES.LINKEDIN}>
                         {ICONS[LINKEDIN]}
                     </IconButton>
                 </Tooltip>
 
-                <Tooltip title={intl.formatMessage({
-                            id: `${INTL_PREFIX}.gitHubTooltip`})} arrow>
+                <Tooltip
+                    title={intl.formatMessage({
+                        id: `${INTL_PREFIX}.gitHubTooltip`,
+                    })}
+                    arrow>
                     <IconButton
                         component={Link}
                         href={HEADER_GITHUB_LINK}
                         target='_blank'
-                        aria-label = {intl.formatMessage({
-                            id: `${ARIA_PREFIX}.visitGitHub`})}>
+                        aria-label={intl.formatMessage({
+                            id: `${ARIA_PREFIX}.visitGitHub`,
+                        })}
+                        sx={SOCIAL_PROFILES.GITHUB}>
                         {ICONS[GITHUB]}
                     </IconButton>
                 </Tooltip>
