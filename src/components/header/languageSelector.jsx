@@ -25,9 +25,6 @@ class LanguageSelector extends Component {
                             onChange={(event, newValue) =>
                                 changeLocale(newValue.props.value)
                             }
-                            aria-label={intl.formatMessage({
-                                id: `${ARIA_PREFIX}.changeLanguage`,
-                            })}
                             value={currentLang}
                             sx={LANGUAGE_SELECTOR_SX.SELECTOR}
                             renderValue={(value) => (
@@ -66,7 +63,8 @@ class LanguageSelector extends Component {
                                         );
                                     } else {
                                         return (
-                                            <MenuItem key={lang} value={lang}>
+                                            <MenuItem key={lang} value={lang} 
+                                            aria-label={intl.formatMessage({ id: `${INTL_PREFIX}.${lang}` })}>
                                                 {content}
                                             </MenuItem>
                                         );
