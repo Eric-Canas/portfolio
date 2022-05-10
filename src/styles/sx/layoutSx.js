@@ -30,7 +30,7 @@ export const SOCIAL_PROFILES = {
     LINKEDIN: {
         transition: "all 0.3s ease-out",
         "&:hover": {
-            color: "#0E76A8",
+            color: "#005B8E",
         },
     },
     GITHUB: {
