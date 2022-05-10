@@ -19,22 +19,28 @@ const ARIA_PREFIX = "ariaLabels";
 class LanguageSelector extends Component {
     render() {
         const { intl } = this.props;
+        const changeLanguageMessage = intl.formatMessage({
+            id: `${ARIA_PREFIX}.changeLanguage`,
+        })
+
         return (
             <FormControl>
                 <IntlContextConsumer>
                     {({ languages, language: currentLang }) => (
                         <Select
-                            id='languages-selector'
+                            id='language-selector'
+                            aria-roledescription={changeLanguageMessage}
                             onChange={(event, newValue) =>
                                 changeLocale(newValue.props.value)
                             }
                             value={currentLang}
-                            aria-label={intl.formatMessage({
-                                id: `${ARIA_PREFIX}.changeLanguage`,
-                            })}
                             sx={LANGUAGE_SELECTOR_SX.SELECTOR}
+                            aria-required='true'
                             renderValue={(value) => (
-                                <Box sx={LANGUAGE_SELECTOR_SX.FLAG_IN_DISPLAY}>
+                                <Box
+                                    sx={LANGUAGE_SELECTOR_SX.FLAG_IN_DISPLAY}
+                                    aria-label={changeLanguageMessage}
+                                    role='button'>
                                     {LANGUAGE_FLAGS[value]}
                                 </Box>
                             )}>
@@ -57,6 +63,7 @@ class LanguageSelector extends Component {
                                         return (
                                             <Tooltip
                                                 key={lang}
+                                                id={lang}
                                                 value={lang}
                                                 title={intl.formatMessage({
                                                     id: `${INTL_PREFIX}.disabledReason`,
@@ -76,6 +83,7 @@ class LanguageSelector extends Component {
                                             <MenuItem
                                                 key={lang}
                                                 value={lang}
+                                                id={lang}
                                                 aria-label={langName}>
                                                 {content}
                                             </MenuItem>
