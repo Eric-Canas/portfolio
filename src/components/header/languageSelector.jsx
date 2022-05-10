@@ -8,12 +8,15 @@ import Box from "@mui/material/Box";
 
 import LANGUAGE_FLAGS from "../../lang/langIcons";
 import { LANGUAGE_SELECTOR_SX } from "../../styles/sx/layoutSx";
-import { IntlContextConsumer, changeLocale, injectIntl } from "gatsby-plugin-intl";
+import {
+    IntlContextConsumer,
+    changeLocale,
+    injectIntl,
+} from "gatsby-plugin-intl";
 
 const INTL_PREFIX = "header.languages";
 const ARIA_PREFIX = "ariaLabels";
 class LanguageSelector extends Component {
-
     render() {
         const { intl } = this.props;
         return (
@@ -35,12 +38,15 @@ class LanguageSelector extends Component {
                             {Object.entries(LANGUAGE_FLAGS).map(
                                 ([lang, flag]) => {
                                     const disabled = !languages.includes(lang);
+                                    const langName = intl.formatMessage({
+                                        id: `${INTL_PREFIX}.${lang}`,
+                                    });
                                     const content = (
                                         <>
                                             {React.cloneElement(flag, {
                                                 style: LANGUAGE_SELECTOR_SX.FLAG_IN_MENU_ITEM,
                                             })}
-                                            {intl.formatMessage({ id: `${INTL_PREFIX}.${lang}` })}
+                                            {langName}
                                         </>
                                     );
                                     //All that if is just because of the tooltip
@@ -55,6 +61,7 @@ class LanguageSelector extends Component {
                                                 <Box>
                                                     <MenuItem
                                                         value={lang}
+                                                        aria-label={langName}
                                                         disabled>
                                                         {content}
                                                     </MenuItem>
@@ -63,8 +70,10 @@ class LanguageSelector extends Component {
                                         );
                                     } else {
                                         return (
-                                            <MenuItem key={lang} value={lang} 
-                                            aria-label={intl.formatMessage({ id: `${INTL_PREFIX}.${lang}` })}>
+                                            <MenuItem
+                                                key={lang}
+                                                value={lang}
+                                                aria-label={langName}>
                                                 {content}
                                             </MenuItem>
                                         );
