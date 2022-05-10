@@ -42,7 +42,7 @@ class ModalHeader extends Component {
         this.setState({ step: nextStep });
     }
 
-    getButton(direction = LEFT, disabled = false) {
+    getButton(direction = LEFT, disabled = false, ariaLabel="") {
         if (direction !== LEFT && direction !== RIGHT)
             throw new Error(
                 `Invalid direction: ${direction}. Must be ${LEFT} or ${RIGHT}`
@@ -53,6 +53,7 @@ class ModalHeader extends Component {
                 key={direction}
                 sx={MODAL_CAROUSEL_SX.CONTROLS}
                 {...CAROUSEL_ITEM_PROPS.ICON_BUTTON}
+                aria-label={ariaLabel}
                 onClick={() =>
                     this.onStepChange(direction === LEFT ? step - 1 : step + 1)
                 }
@@ -80,8 +81,8 @@ class ModalHeader extends Component {
         );
         const disabledPrevious = step === 0;
         const disabledNext = step === images.length - 1;
-        const previousButton = this.getButton(LEFT, disabledPrevious);
-        const nextButton = this.getButton(RIGHT, disabledNext);
+        const previousButton = this.getButton(LEFT, disabledPrevious, previousImageTooltip);
+        const nextButton = this.getButton(RIGHT, disabledNext, nextImageTooltip);
         return (
             <Grid item sx={MODAL_SX.HEADER} component='header'>
                 <AutoPlaySwipeableViews

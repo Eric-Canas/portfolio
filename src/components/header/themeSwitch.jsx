@@ -9,6 +9,7 @@ import ICONS, { DARK_MODE, LIGHT_MODE } from "../../constants/icons";
 import { injectIntl } from "gatsby-plugin-intl";
 
 const INTL_PREFIX = "header.themeTooltip";
+const ARIA_PREFIX = "ariaLabels";
 
 class ThemeSwitch extends Component {
 
@@ -29,7 +30,11 @@ class ThemeSwitch extends Component {
                                 : ""
                         }`}
                         arrow>
-                        <IconButton onClick={toggle}>
+                        <IconButton onClick={toggle} aria-label = 
+                        {intl.formatMessage({id : `${ARIA_PREFIX}.switchTheme`},
+                                            {newTheme : intl.formatMessage({
+                                                id: `${INTL_PREFIX}.${isDark ? "light" : "dark"}`,
+                                            })})}>
                             {ICONS[isDark ? DARK_MODE : LIGHT_MODE]}
                         </IconButton>
                     </Tooltip>

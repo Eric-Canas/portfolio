@@ -100,5 +100,22 @@
         "dateConnector" : "a",
         "and" : "y",
         "from" : "desde"
+    },
+    "ariaLabels" : {
+        "visitLinkedIn" : "Visita mi perfil de LinkedIn",
+        "visitGitHub" : "Visita mi perfil de GitHub",
+        "toAsset": "Abrir el {text} {pdf}",
+        "contactMe": "Mandame un correo",
+        "sendEmail": "Enviar el correo",
+        "switchTheme" : "Cambiar al {newTheme}",
+        "changeLanguage" : "Cambiar idioma",
+        "openMenu" : "Ver el resto de secciones de la web",
+        "closeMenu": "Ocultar el menú de secciones",
+        "homeMenu" : "Ir a la página de inicio",
+        "genericMenu" : "Visita la sección de {section}",
+        "closeModal" : "Cerrar el PopUp",
+        "modalButton" : "Ir al {type}",
+        "homeFrom404" : "Volver a la página de inicio",
+        "contactFrom404" : "Notificarme un error"
     }
 }

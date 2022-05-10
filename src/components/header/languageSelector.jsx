@@ -11,7 +11,7 @@ import { LANGUAGE_SELECTOR_SX } from "../../styles/sx/layoutSx";
 import { IntlContextConsumer, changeLocale, injectIntl } from "gatsby-plugin-intl";
 
 const INTL_PREFIX = "header.languages";
-
+const ARIA_PREFIX = "ariaLabels";
 class LanguageSelector extends Component {
 
     render() {
@@ -25,6 +25,9 @@ class LanguageSelector extends Component {
                             onChange={(event, newValue) =>
                                 changeLocale(newValue.props.value)
                             }
+                            aria-label={intl.formatMessage({
+                                id: `${ARIA_PREFIX}.changeLanguage`,
+                            })}
                             value={currentLang}
                             sx={LANGUAGE_SELECTOR_SX.SELECTOR}
                             renderValue={(value) => (

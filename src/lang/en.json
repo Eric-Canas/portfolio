@@ -100,5 +100,22 @@
         "dateConnector" : "to",
         "and" : "and",
         "from" : "from"
+    },
+    "ariaLabels" : {
+        "visitLinkedIn" : "Visit my LinkedIn profile",
+        "visitGitHub" : "Visit my GitHub profile",
+        "toAsset": "Open the {text} {pdf}",
+        "contactMe": "Send me an email",
+        "sendEmail": "Send the email",
+        "switchTheme": "Switch to {newTheme}",
+        "changeLanguage": "Change language",
+        "openMenu" : "See the rest of sections of the website",
+        "closeMenu": "Hide the sections menu",
+        "homeMenu" : "Go to the home page",
+        "genericMenu" : "Go to see my {section}",
+        "closeModal" : "Close the PopUp",
+        "modalButton" : "Go to the {type}",
+        "homeFrom404" : "Come back home",
+        "contactFrom404" : "Report me an error"
     }
 }

@@ -17,6 +17,7 @@ import { graphql } from "gatsby";
 import { injectIntl, Link } from "gatsby-plugin-intl";
 
 const INTL_PREFIX = "404";
+const ARIA_PREFIX = "ariaLabels";
 
 class NotFoundPage extends Component {
     constructor(props) {
@@ -30,6 +31,7 @@ class NotFoundPage extends Component {
 
     render() {
         const { header, subheader } = this.pageProps;
+        const { intl } = this.props;
         return (
             <Box component='div' sx={{minHeight : "104.1vh"}}>
                 <Grid
@@ -68,8 +70,9 @@ class NotFoundPage extends Component {
                                 color='primary'
                                 to='/'
                                 sx={INDEX_SX.FOOTER_BUTTON}
-                                startIcon={ICONS[HOME]}>
-                                {this.props.intl.formatMessage({
+                                startIcon={ICONS[HOME]}
+                                aria-label={intl.formatMessage({id : `${ARIA_PREFIX}.homeFrom404`})}>
+                                {intl.formatMessage({
                                     id: `${INTL_PREFIX}.toHome`,
                                 })}
                             </Button>
@@ -82,6 +85,7 @@ class NotFoundPage extends Component {
                             variant='outlined'
                             color='error'
                             to='/contact-me'
+                            aria-label={intl.formatMessage({id : `${ARIA_PREFIX}.contactFrom404`})}
                             sx={INDEX_SX.FOOTER_BUTTON}
                             startIcon={ICONS[EMAIL]}>
                             {this.props.intl.formatMessage({

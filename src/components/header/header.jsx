@@ -13,16 +13,20 @@ import HideOnScroll from "../general/hideOnScroll";
 
 import { DIRECTION_DOWN } from "../../constants/keys";
 import { LAYOUT_HEADER_PROPS, LAYOUT_HEADER_SX } from "../../styles/sx/layoutSx";
+import { injectIntl } from "gatsby-plugin-intl";
+
+const ARIA_PREFIX = "ariaLabels";
 
 class Header extends Component {
 
     render() {
-        const { title, openDrawer } = this.props;
+        const { title, openDrawer, intl } = this.props;
         return (
             <HideOnScroll direction={DIRECTION_DOWN}>
                 <AppBar position='sticky'>
                     <Toolbar>
-                        <IconButton edge='start' onClick={openDrawer}>
+                        <IconButton edge='start' onClick={openDrawer}
+                        aria-label = {intl.formatMessage({id : `${ARIA_PREFIX}.openMenu`})}>
                             <MenuIcon />
                         </IconButton>
                         <Typography
@@ -41,4 +45,4 @@ class Header extends Component {
         );
     }
 }
-export default Header;
+export default injectIntl(Header);

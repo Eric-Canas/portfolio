@@ -16,9 +16,11 @@ import { MENU_SX } from "../../../styles/sx/layoutSx";
 import { StaticQuery, graphql } from "gatsby";
 import { injectIntl } from "gatsby-plugin-intl";
 
+const HOME_PREFIX = "home";
+const CONTACT_PREFIX = "contact";
+const ARIA_PREFIX = "ariaLabels";
 
 class MenuContent extends Component {
-
     render() {
         const { toggleDrawer } = this.props;
         const { intl } = this.props;
@@ -33,7 +35,10 @@ class MenuContent extends Component {
                     <ListItem
                         button
                         onClick={() => toggleDrawer(false)}
-                        sx={MENU_SX.HEADER_ITEM}>
+                        sx={MENU_SX.HEADER_ITEM}
+                        aria-label={intl.formatMessage({
+                            id: `${ARIA_PREFIX}.closeMenu`,
+                        })}>
                         <ListItemIcon sx={MENU_SX.CLOSE_MENU_ICON}>
                             {ICONS[BACK]}
                         </ListItemIcon>
@@ -41,9 +46,14 @@ class MenuContent extends Component {
                     <Divider />
                     <MenuItem
                         icon={HOME}
-                        label={intl.formatMessage({ id: "home.title" })}
+                        label={intl.formatMessage({
+                            id: `${HOME_PREFIX}.title`,
+                        })}
                         slug='/'
                         sx={MENU_SX.SEPARATED_ITEM}
+                        ariaLabel={intl.formatMessage({
+                            id: `${ARIA_PREFIX}.homeMenu`,
+                        })}
                     />
                     <StaticQuery
                         query={getMenuItems}
@@ -63,6 +73,12 @@ class MenuContent extends Component {
                                             label={node.label}
                                             slug={node.page.slug}
                                             key={node.id}
+                                            ariaLabel={intl.formatMessage(
+                                                {
+                                                    id: `${ARIA_PREFIX}.genericMenu`,
+                                                },
+                                                { section: node.label }
+                                            )}
                                         />
                                     ))}
                                 </>
@@ -72,7 +88,10 @@ class MenuContent extends Component {
                     <MenuItem
                         icon={EMAIL}
                         label={intl.formatMessage({
-                            id: "contact.title",
+                            id: `${CONTACT_PREFIX}.title`,
+                        })}
+                        ariaLabel = {intl.formatMessage({
+                            id: `${ARIA_PREFIX}.contactMe`,
                         })}
                         slug='contact-me'
                         sx={MENU_SX.SEPARATED_ITEM}

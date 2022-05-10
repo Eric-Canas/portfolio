@@ -7,6 +7,9 @@ import ICONS, { EMAIL } from "../../constants/icons";
 import { INDEX_PROPS, INDEX_SX } from "../../styles/sx/pageSx";
 import { Link, injectIntl } from "gatsby-plugin-intl";
 
+const CONTACT_PREFIX = "contact";
+const ARIA_PREFIX = "ariaLabels";
+
 class IndexFooter extends Component {
     constructor(props) {
         super(props);
@@ -15,6 +18,7 @@ class IndexFooter extends Component {
     }
 
     render() {
+        const {intl} = this.props;
         return (
             <Grid
                 container
@@ -25,8 +29,9 @@ class IndexFooter extends Component {
                     {...INDEX_PROPS.CONTACT_ME_BUTTON}
                     to='/contact-me'
                     sx={INDEX_SX.FOOTER_BUTTON}
-                    startIcon={ICONS[EMAIL]}>
-                    {this.props.intl.formatMessage({ id: "contact.title" })}
+                    startIcon={ICONS[EMAIL]}
+                    aria-label={intl.formatMessage({id: `${ARIA_PREFIX}.contactMe`})}>
+                    {intl.formatMessage({ id: `${CONTACT_PREFIX}.title` })}
                 </Button>
             </Grid>
         );

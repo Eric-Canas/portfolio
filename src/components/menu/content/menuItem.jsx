@@ -12,10 +12,11 @@ class MenuItem extends Component {
   }
 
   render() {
-    const { icon, label, slug, sx } = this.props;
+    const { icon, label, slug, sx, ariaLabel } = this.props;
     const path = slug.startsWith("/") ? slug : `/${slug}`;
     return (
-      <ListItem button component={this.Link} to={path} sx={sx}>
+      <ListItem button component={this.Link} to={path} sx={sx}
+            aria-label = {ariaLabel}>
             <ListItemIcon>{ICONS[icon]}</ListItemIcon>
             <ListItemText primary={label} />
           </ListItem>

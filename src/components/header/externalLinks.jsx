@@ -13,6 +13,7 @@ import {
 import { injectIntl } from "gatsby-plugin-intl";
 
 const INTL_PREFIX = "header";
+const ARIA_PREFIX = "ariaLabels"
 
 class ExternalLinks extends Component {
 
@@ -30,7 +31,9 @@ class ExternalLinks extends Component {
                     <IconButton
                         component={Link}
                         href={HEADER_LINKEDIN_LINK}
-                        target='_blank'>
+                        target='_blank'
+                        aria-label={intl.formatMessage({
+                            id: `${ARIA_PREFIX}.visitLinkedIn`})}>
                         {ICONS[LINKEDIN]}
                     </IconButton>
                 </Tooltip>
@@ -40,7 +43,9 @@ class ExternalLinks extends Component {
                     <IconButton
                         component={Link}
                         href={HEADER_GITHUB_LINK}
-                        target='_blank'>
+                        target='_blank'
+                        aria-label = {intl.formatMessage({
+                            id: `${ARIA_PREFIX}.visitGitHub`})}>
                         {ICONS[GITHUB]}
                     </IconButton>
                 </Tooltip>
