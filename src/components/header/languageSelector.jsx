@@ -29,6 +29,9 @@ class LanguageSelector extends Component {
                                 changeLocale(newValue.props.value)
                             }
                             value={currentLang}
+                            aria-label={intl.formatMessage({
+                                id: `${ARIA_PREFIX}.changeLanguage`,
+                            })}
                             sx={LANGUAGE_SELECTOR_SX.SELECTOR}
                             renderValue={(value) => (
                                 <Box sx={LANGUAGE_SELECTOR_SX.FLAG_IN_DISPLAY}>
