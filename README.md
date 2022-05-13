@@ -1,8 +1,10 @@
 <h1> Welcome to my <a href="https://ericcanas.com/" target="_blank">Portfolio</a> <img
 src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="32" /> </h1>
-This portfolio is a <b>Serverless</b> <b>Static Website</b> developed with <a href="https://www.gatsbyjs.com/" target="_blank"><img alt="Gatsby.js" title="Gatsby.js" src=https://img.shields.io/badge/Gatsby-%23663399.svg?style=flat&logo=gatsby&logoColor=white height="20"></a>, <a href="https://es.reactjs.org/" target="_blank"><img alt="React.js" title="React.js" src=https://img.shields.io/badge/React-%2320232a.svg?style=flat&logo=React&logoColor=%2361DAFB height="20"></a> and stylized with <a href="https://mui.com/" target="_blank"><img alt="MUI" title="MUI" src=https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white height="20"></a>. Its content is queried from <i><b>Contentful</b></i>, a <b>Headless CMS</b>, using <a href="https://graphql.org/" target="_blank"><img alt="GraphQL" title="GraphQL" src=https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white height="20"></a>. 
+This portfolio is a <b>Serverless</b> <b>Static Website</b> developed with <a href="https://www.gatsbyjs.com/" target="_blank"><img alt="Gatsby.js" title="Gatsby.js" src=https://img.shields.io/badge/Gatsby.js-%23663399.svg?style=flat&logo=gatsby&logoColor=white height="20"></a> and <a href="https://es.reactjs.org/" target="_blank"><img alt="React.js" title="React.js" src=https://img.shields.io/badge/React.js-%2320232a.svg?style=flat&logo=React&logoColor=%2361DAFB height="20"></a> and stylized with <a href="https://mui.com/" target="_blank"><img alt="MUI" title="MUI" src=https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white height="20"></a>. Its content is queried from <i><b>Contentful</b></i>, a <b>Headless CMS</b>, using <a href="https://graphql.org/" target="_blank"><img alt="GraphQL" title="GraphQL" src=https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white height="20"></a>. 
 
-This website is hosted at <b><a href="https://ericcanas.com/" target="_blank">ericcanas.com</a></b>. It is available in <b><a href="https://ericcanas.com/en" target="_blank">English</a></b> and <b><a href="https://ericcanas.com/es" target="_blank">Spanish</a></b>.
+This website is hosted at <b><a href="https://ericcanas.com/" target="_blank">ericcanas.com</a></b>. It is available in <b><a href="https://ericcanas.com/en" target="_blank"><img
+src="./src/images/united_kingdom_flag.svg" height="14"/>&thinsp;English</a></b> and <b><a href="https://ericcanas.com/es" target="_blank"><img
+src="./src/images/spain_flag.svg" height="14"/>&thinsp;Spanish</a></b>.
 
 <h2> About Me </h2>
 
@@ -13,3 +15,5 @@ This website is hosted at <b><a href="https://ericcanas.com/" target="_blank">er
 More than <a href="https://ericcanas.com/professional-experience/" target="_blank">3 years of experience</a> as <b>Computer Vision Engineer</b> and <b>Researcher</b>. First at the <b>Computer Vision Center</b> and later at the <b>Department of Applied Physics</b> of the <b>UB</b>. Actually working for <a href="https://www.clutchapp.io/" target="_blank">Clutch</a>, a Danish <b>Start Up</b> developing a <b>Virtual Badminton Coach</b> that gives <b>real time performance feedback</b> to professional and amateur players.  
 
 Specialized in <b>Deep Learning</b> and <b>High Performance Computing</b>. <b>React</b> enthusiast. Very interested to deepen in the development of <b>PWA</b>, <b>Serverless applications</b> and <b>Cloud Services</b>.  
+
+<h2>Performance</h2>
