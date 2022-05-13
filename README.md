@@ -1,6 +1,7 @@
-# Welcome to my [Portfolio](https://ericcanas.com/)
+<h1> Welcome to my <a href="https://ericcanas.com/" target="_blank">Portfolio</a> <img
+src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="32" /> </h1>
 
-<img src="./src/images/Logo-No-Background.png" width="25%" align="left"> <b>Computer Engineer</b> and <b>Artificial Intelligence</b> Specialist, specialized in <b>Computer Vision</b>.
+<img src="./src/images/Logo-No-Background.png" width="22%" align="left"> <b>Computer Engineer</b> and <b>Artificial Intelligence</b> Specialist, specialized in <b>Computer Vision</b>.
 
 <b>Computer Engineering</b> (specialization in <b>Computing</b>) [<i>UAB</i>] graduated with <a href="https://ericcanas.com/academic-background/" target="_blank">Honor Marks in 17 Subjects</a>. Graduated from the <b>Master in Artificial Intelligence</b> [<i>UPC</i>] with <a href="https://ericcanas.com/academic-background/" target="_blank">Honor Marks in 3 Subjects</a>. Awarded as the <a href="https://drive.google.com/file/d/1lPAdt6uIdZTUporimYOh4IsLWDwxtZj8/view?usp=sharing" target="_blank">2nd best student of the promotion</a> (147 students) and <b>1st of specialization</b>. Author of <a href="https://ericcanas.com/publications/" target="_blank">publications</a> in <b>international conferences</b> [<i>Tier A2</i>].
 
