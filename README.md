@@ -1,4 +1,4 @@
-<h1> Welcome to my <a href="https://ericcanas.com/" target="_blank">Portfolio</a> <img
+<h1 align="center"> Welcome to my <a href="https://ericcanas.com/" target="_blank">Portfolio</a> <img
 src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" height="32" /> </h1>
 This portfolio is a <b>Serverless</b> <b>Static Website</b> developed with <a href="https://www.gatsbyjs.com/" target="_blank"><img alt="Gatsby.js" title="Gatsby.js" src=https://img.shields.io/badge/Gatsby.js-%23663399.svg?style=flat&logo=gatsby&logoColor=white height="20"></a> and <a href="https://es.reactjs.org/" target="_blank"><img alt="React.js" title="React.js" src=https://img.shields.io/badge/React.js-%2320232a.svg?style=flat&logo=React&logoColor=%2361DAFB height="20"></a> and stylized with <a href="https://mui.com/" target="_blank"><img alt="MUI" title="MUI" src=https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white height="20"></a>. Its content is queried from <i><b>Contentful</b></i>, a <b>Headless CMS</b>, using <a href="https://graphql.org/" target="_blank"><img alt="GraphQL" title="GraphQL" src=https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white height="20"></a>. 
 
@@ -16,4 +16,6 @@ More than <a href="https://ericcanas.com/professional-experience/" target="_blan
 
 Specialized in <b>Deep Learning</b> and <b>High Performance Computing</b>. <b>React</b> enthusiast. Very interested to deepen in the development of <b>PWA</b>, <b>Serverless applications</b> and <b>Cloud Services</b>.  
 
-<h2>Performance</h2>
+<h2>Lighthouse Homepage Metrics</h2>
+
+<img src="./src/images/lighthouse_desktop.png" />
