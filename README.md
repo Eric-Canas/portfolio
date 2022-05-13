@@ -8,7 +8,7 @@ src="./src/images/spain_flag.svg" height="14"/>&thinsp;Spanish</a></b>.
 
 <h2> About Me </h2>
 
-<img src="./src/images/Logo-No-Background.png" width="22%" align="left"> <a href="https://github.com/Eric-Canas/" target="_blank"> <img alt="GitHub" title="Eric-Canas" src="https://img.shields.io/badge/-Github-black?style=flat&logo=github"></a> 
+<img src="./src/images/Logo-No-Background.png" width="24%" align="left"> <a href="https://github.com/Eric-Canas/" target="_blank"> <img alt="GitHub" title="Eric-Canas" src="https://img.shields.io/badge/-Github-black?style=flat&logo=github"></a> 
 <a href="https://www.linkedin.com/in/eric-canas/" target="_blank"> <img alt="Linkedin" title="eric-canas" src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white"></a> 
 <a href="https://stackoverflow.com/story/eric-canas" target="_blank"> <img alt="StackOverflow" title="eric-canas" src="https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat&logo=stack-overflow&logoColor=white"></a> 
 <a href="https://scholar.google.com/citations?user=VmZ_MmgAAAAJ&hl=es&oi=ao" target="_blank"> <img alt="GoogleScholar" title="Google Scholar" src="https://img.shields.io/static/v1?style=flat&label=&message=Scholar&color=49A5D6&logo=GoogleScholar&logoColor=ACDAF2"></a> 
